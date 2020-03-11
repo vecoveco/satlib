@@ -1,4 +1,4 @@
-# satlib
+# satlib: Library for Satellite Data Processing
 -------------------
 
 ### Info
