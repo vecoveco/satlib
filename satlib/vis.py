@@ -12,7 +12,7 @@ def plot_gprof_IWP(gprof_path):
     
     """
     
-    gpmdprs = h5py.File(pfad, 'r')
+    gpmdprs = h5py.File(gprof_path, 'r')
     gprof_lat = np.array(gpmdprs['S1']['Latitude'])
     gprof_lon = np.array(gpmdprs['S1']['Longitude'])
 
@@ -42,13 +42,13 @@ def plot_gprof_IWP(gprof_path):
     plt.yticks(fontsize=20)
     plt.show()
     
-def plot_dpr_PWI(gprof_path):
+def plot_dpr_PWI(dpr_path):
     """
     dpr_path ::: path to DPR data
     
     """
     
-    gpmdprs = h5py.File(pfad, 'r')
+    gpmdprs = h5py.File(dpr_path, 'r')
     gpm_lat = np.array(gpmdprs['NS']['Latitude'])
     gpm_lon = np.array(gpmdprs['NS']['Longitude'])
 
